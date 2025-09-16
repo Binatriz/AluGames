@@ -40,16 +40,20 @@ ul {
     text-align: center;  
 }
 .img_jogo {
-    width: 220px; 
-    border: 2px solid #333;
+    width: 220px;
+    height: 360px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
     padding: 12px;
+    border: 2px solid #333;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     text-align: center;
-    box-sizing: border-box; 
-    overflow: hidden; 
-    transition: transform 0.3s ease;
+    overflow: hidden;
 }
 .img_jogo img {
     width: 100%;     
@@ -58,16 +62,13 @@ ul {
     border-radius: 6px;
     object-fit: cover; 
 }
-.img_jogo:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
 .img_jogo p {
     font-family: 'Poppins', sans-serif;
     margin-top: 8px;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    word-wrap: break-word;
 }
 .btn {
     font-size: 13px;
@@ -80,4 +81,9 @@ ul {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
