@@ -33,15 +33,15 @@ ul {
     margin: 40px auto;
     text-align: center;
 }
-.dashboard_item_img {
+.dashboard_items_item {
     display: flex;
     flex-direction: column;
     align-items: center; 
     text-align: center;  
 }
-.img_jogo {
+.dashboard_item_img {
     width: 220px;
-    height: 360px; 
+    height: 220px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -55,14 +55,14 @@ ul {
     text-align: center;
     overflow: hidden;
 }
-.img_jogo img {
+.dashboard_items_item img {
     width: 100%;     
     height: auto;
     display: block;
     border-radius: 6px;
     object-fit: cover; 
 }
-.img_jogo p {
+.dashboard_items_item p {
     font-family: 'Poppins', sans-serif;
     margin-top: 8px;
     font-size: 24px;
@@ -70,7 +70,7 @@ ul {
     text-align: center;
     word-wrap: break-word;
 }
-.btn {
+.dashboard_item_button {
     font-size: 13px;
     display: inline-block;
     padding: 10px 20px;
@@ -83,7 +83,7 @@ ul {
     transition: background-color 0.3s;
     transition: transform 0.3s ease;
 }
-.btn:hover {
+.dashboard_item_button:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
