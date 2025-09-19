@@ -6,40 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
-<body>
-    <main>
-        <div class="container">
-            <h1>AluGames</h1>
-            <ul>
-                <li class="dashboard_items_item" id="game-1">
-                    <div class="dashboard_item_img">
-                        <img src="img/theLastofUs.jpg" alt="">
+<body class="body">
+    <main class="container main">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Aluguel de <span class="page-title__emphasis">boardgames</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/theLastofUs.jpg" alt="Capa jogo The Last of Us">
                     </div>
-                    <p class="dashboard_item_name">The Last of Us</p>
-                    <a href="#" onclick="alterarStatus(1)" class="dashboard_item_button">Alugar</a>
+                    <p class="dashboard__item__name">The Last of Us</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
                 </li>
-                <li class="dashboard_items_item" id="game-2">
-                    <div class="dashboard_item_img">
-                        <img src="img/crashBandicoot.png" alt="">
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/uncharted4.jpg" alt="Capa jogo Uncharted 4">
                     </div>
-                    <p class="dashboard_item_name">Crash Bandicoot</p>
-                    <a href="#" onclick="alterarStatus(2)" class="dashboard_item_button">Alugar</a>
+                    <p class="dashboard__item__name">Uncharted 4</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
                 </li>
-                <li class="dashboard_items_item" id="game-3">
-                    <div class="dashboard_item_img">
-                        <img src="img/uncharted4.jpg" alt="">
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/crashBandicoot.png" alt="Capa jogo Crash Bandicoot">
                     </div>
-                    <p class="dashboard_item_name">Uncharted 4</p>
-                    <a href="#" onclick="alterarStatus(3)" class="dashboard_item_button">Alugar</a>
+                    <p class="dashboard__item__name">Crash Bandicoot</p>
+                    <a onclick="alterarStatus(3)" href="#"
+                        class="dashboard__item__button dashboard__item__button--return">Devolver</a>
                 </li>
             </ul>
-        </div>
+        </section>
     </main>
+
     <script src="code.js"></script>
 </body>
 
